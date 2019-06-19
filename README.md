@@ -8,4 +8,4 @@ We will be using the amazon dataset from kaggle, don't uploaded pls!
 
 ## HDFS folder
 
-The hdfs folder is the valdiejo one :)
+The hdfs folder is the valdiejo one :), screen is the 30500 :)
