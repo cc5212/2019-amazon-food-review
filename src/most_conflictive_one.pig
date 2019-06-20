@@ -1,6 +1,5 @@
 data = LOAD '/uhadoop2019/valdiejo/stored_data' USING PigStorage('\t', 'schema');
 /* 
-Id: row id
 ProductId: Unique identifier for the product
 UserId: Unique identifier of the user
 ProfileName: Profile name of the user

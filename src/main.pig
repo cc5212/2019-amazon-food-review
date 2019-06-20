@@ -7,7 +7,6 @@ quasi_cleaned_data = FILTER raw_data BY row_id IS NOT NULL;
 cleaned_data = FOREACH quasi_cleaned_data GENERATE product_id, user_id, profile_name, num_help, den_help, score, time, summary, text;
 
 /*
-Id: row id
 ProductId: Unique identifier for the product
 UserId: Unique identifier of the user
 ProfileName: Profile name of the user
