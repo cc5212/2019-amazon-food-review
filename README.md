@@ -2,9 +2,9 @@
 
 ## Who we are
 
-[Joaquín Cruz](https://github.com/joacocruz6)
-[Diego Ortego](https://github.com/Gedoix)
-[Valeria Valdés](https://github.com/valeriavaldes)
+* [Joaquín Cruz](https://github.com/joacocruz6)
+* [Diego Ortego](https://github.com/Gedoix)
+* [Valeria Valdés](https://github.com/valeriavaldes)
 
 ## Our Goal
 
