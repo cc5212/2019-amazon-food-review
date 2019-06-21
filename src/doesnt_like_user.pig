@@ -5,6 +5,8 @@ raw_data = LOAD '/uhadoop2019/valdiejo/amazon_food_data' USING PigStorage('\t') 
 users_data = FOREACH raw_data GENERATE user_id,profile_name,score;
 users_data_grouped = GROUP users_data BY user_id;
 users_data_avarage_score = FOREACH users_data_grouped GENERATE AVG(users_data.score) AS avarage, group AS user_id;
-sorted = ORDER users_data_avarage_score BY avarage ASC;
+users_data_avarage = JOIN users_data_avarage_score BY user_id, users_data BY user_id;
+users_data_avarage_unique = DISTINCT users_data_avarage;
+sorted = ORDER users_data_avarage_unique BY avarage ASC;
 worst = LIMIT sorted 3;
 DUMP worst;
