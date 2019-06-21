@@ -20,6 +20,7 @@ Text: Text of the review
 
 STORE cleaned_food_data INTO '/uhadoop2019/valdiejo/amazon_food_data' USING PigStorage('\t', 'schema');
 
+
 /* To load the data use
 
 food_data = LOAD '/uhadoop2019/valdiejo/amazon_food_data' USING PigStorage('\t', 'schema') AS (product_id: chararray, user_id: chararray, profile_name: chararray, num_help: int, den_help: int, score: int, time: datetime, summary: chararray, text: chararray);
