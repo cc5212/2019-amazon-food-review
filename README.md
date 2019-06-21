@@ -59,15 +59,65 @@ Despithe this, we believe scraping amazon's pages for the names of each product_
 
 We mostly used grouping and aggregating numeric values for computing our results (toguether with some arithmetic functions when computing, say, standard deviations).
 
+The problem we most often encountered was a mixture of Pig's slow computation times, and low availability of both hadoop and HDFS storage space. To fix this we simply waited longer.
+
 ## Results
 
+We were very pleasantly surprised by the wealth of fun information on theis dataset.
 
+For example, we found that the user with the most 5 star reviews, "Rebecca of Amazon", with a grand total of 326 reviews, was none other than the author of a book by the name ***"Reviewing as a Lifestyle: The Experience of Being a Top 50 Reviewer at Amazon.com"***.
+
+The 3 top users with the most 5 stars are:
+
+* Rebecca of Amazon "The Rebecca Review"
+  * 326 reviews.
+* Gary Peterson
+  * 286 reviews.
+* C. F. Hill "CFH"
+  * 271 reviews.
+
+We also found the users with the most 1 star scores:
+
+* Christopher Hayes
+  * 199 reviews.
+* BreezyPaige
+  * 67 reviews.
+* Bigmac
+  * 47 reviews
+
+The user with the most reviews overall:
+
+* however
+  * 1118 reviews.
+
+We found the "most useful" review, it's very long so you can find it over at the appendix. Although let me spoil that it ends with:
+
+* *"... so I have planted a more interesting kind of lettuce."*
+
+And, of course, we found the least useful too:
+
+* *"... Just order what you want them to have and Amazon takes care of the rest."*
+
+We calculated each user's score standard deviation (pig should have an aggregation for this!), and found the user with the highest such value:
+
+* tatcol
+  * 30 reviews.
+
+And of course we have added some reviews written by the users we have listed here on the appendix.
 
 ## Conclusion
 
+It seems like amazon reviews has it's own little crowd of people who are passionate about reviewing both the things they love an the ones they don't.
 
+We learned that datasets involving humans will probably hold surprises unnapparent to anyone without the propper lens. With some hilarious results.
 
-## Some more results of our queries (Appendix)
+We also experienced both Apache Pig's great prototyping speed, and lackig efficiency.
+
+In this sense, we could have used something like Apache Spark for this, and may have acquired our computation results faster wih it, but the prototyping speed was so good we believe it was a tradeoff worth making.
+
+We also think scraping Amazon.com for product name data is a yet unexplored path we could have taken, possibly enriching our query results.
+
+## Appendix
 
 ### Users with the most one star scores
 
