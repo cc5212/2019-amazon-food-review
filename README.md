@@ -1,10 +1,18 @@
 # 2019-amazon-food-review
 
+## Description
+
+A short analysis of an amazon food reviews dataset.
+
+We chose it for the food, and stayed for the reviewers.
+
 ## Who we are
 
 * [Joaquín Cruz](https://github.com/joacocruz6)
 * [Diego Ortego](https://github.com/Gedoix)
 * [Valeria Valdés](https://github.com/valeriavaldes)
+
+Our `group-id` is `valdiejo`.
 
 ## Our Goal
 
