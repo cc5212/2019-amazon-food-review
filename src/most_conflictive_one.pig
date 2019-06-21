@@ -34,7 +34,7 @@ grouped_by_user_and_normalized_squared_distances = GROUP user_with_normalized_sq
 
 user_with_standard_deviation = FOREACH grouped_by_user_and_normalized_squared_distances GENERATE group AS user_id, SQRT((double)SUM(user_with_normalized_squared_distances.normalized_squared_distance)) AS standard_deviation;
 
-user_with_standard_deviation_ordered = ORDER user_with_standard_deviation BY * DESC;
+user_with_standard_deviation_ordered = ORDER user_with_standard_deviation BY standard_deviation DESC;
 
 most_conflictive_user = LIMIT user_with_standard_deviation_ordered 1;
 
@@ -42,6 +42,10 @@ most_conflictive_user_data = JOIN most_conflictive_user BY user_id, food_data BY
 
 most_conflictive_user_cleaned_data = FOREACH most_conflictive_user_data GENERATE most_conflictive_user::user_id AS user_id, most_conflictive_user::standard_deviation AS scores_standard_deviation, food_data::product_id AS product_id, food_data::profile_name AS profile_name, food_data::num_help AS num_help, food_data::den_help AS den_help, food_data::score AS score, food_data::time AS time, food_data::summary AS summary,food_data::text AS text;
 
+/*
+
 STORE most_conflictive_user_cleaned_data INTO '/uhadoop2019/valdiejo/most_conflictive_user' USING PigStorage('\t', 'schema');
+
+*/
 
 DUMP most_conflictive_user_cleaned_data;
