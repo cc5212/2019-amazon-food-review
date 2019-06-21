@@ -18,6 +18,13 @@ The hdfs folder is the valdiejo one :).
 (Joe MacBu,43)
 (Ryan Johnson,42)
 
+## Users with the most score of five
+(Rebecca of Amazon "The Rebecca Review",326)
+(Gary Peterson,286)
+(C. F. Hill "CFH",271)
+(O. Brown "Ms. O. Khannah-Brown",240)
+(Gunner,182)
+
 ## Less useful review
 
 (-2,My son loves spaghetti so I didn't hesitate ordering this for him. He says they are great. I have tried them myself and they are delicious. Just open and pop them in the microwave. It is very easy. The best thing about ordering from Amazon grocery is that they deliver to your door. If you have a loved one that lives far away and may have limited transportation this is the answer. Just order what you want them to have and Amazon takes care of the rest.)
