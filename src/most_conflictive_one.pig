@@ -1,4 +1,4 @@
-data = LOAD '/uhadoop2019/valdiejo/stored_data' USING PigStorage('\t', 'schema');
+data = LOAD '/uhadoop2019/valdiejo/amazon_food_data' USING PigStorage('\t', 'schema');
 /* 
 ProductId: Unique identifier for the product
 UserId: Unique identifier of the user

@@ -18,7 +18,7 @@ Summary: Brief summary of the review
 Text: Text of the review
  */
 
-STORE cleaned_data INTO '/uhadoop2019/valdiejo/stored_data' USING PigStorage('\t', 'schema');
+STORE cleaned_data INTO '/uhadoop2019/valdiejo/amazon_food_data' USING PigStorage('\t', 'schema');
 
 /* To load the data use
 
