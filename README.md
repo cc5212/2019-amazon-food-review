@@ -14,7 +14,7 @@ We chose it for the food, and stayed for the reviewers.
 
 Our `group-id` is `valdiejo`.
 
-## Our Goal
+## Overwiew
 
 Our project's original goal was to look into which Amazon Foods were best and worst by looking at their reviews on the site, and to have a good time looking at some strange and interesting reviews.
 
@@ -24,7 +24,7 @@ But then, as we looked at the data we found an amazing new world of possibilitie
 
 Some interesting questions are what is the user with the greatest amount of one star reviews, with the greatest amount of five star reviews, which are the most and less usefull reviews, and what is their content, the lowest avarage score, the user with the morst reviews written.
 
-## Our Dataset
+## Data
 
 We will be using an amazon dataset, taken from kaggle.
 
