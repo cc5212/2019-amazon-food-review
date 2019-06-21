@@ -39,3 +39,6 @@ The hdfs folder is the valdiejo one :).
 ## User that you write more reviews
 
 (however,1118)
+
+## Aidan
+(Hogan,As others have said, it has the chemical taste of artificial sweetener. When will these companies realize that there are a ton of consumers out there who do NOT like sugar substitutes!)
