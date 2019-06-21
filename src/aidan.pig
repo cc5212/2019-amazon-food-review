@@ -2,7 +2,6 @@ raw_data = LOAD '/uhadoop2019/valdiejo/amazon_food_data' USING PigStorage('\t') 
 users_review = FOREACH raw_data GENERATE user_id,profile_name,score,text;
 aidan_hogan = FILTER users_review BY profile_name=='Aidan Hogan';
 aidan_hogan_group = GROUP aidan_hogan ALL;
-number = FOREACH aidan_hogan_group GENERATE COUNT(aidan_hogan),group AS profile_name;
 ahogan = FILTER users_review BY profile_name == 'ahogan' OR profile_name == 'Ahogan';
 aidan = FILTER users_review BY profile_name == 'Aidan';
 hogan = FILTER users_review BY profile_name == 'Hogan';
